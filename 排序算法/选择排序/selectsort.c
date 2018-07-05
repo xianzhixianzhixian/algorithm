@@ -8,7 +8,7 @@ int main()
 	int array[10] = {10,1,3,2,75,1000,379,0,-1,10};
 	int min = array[0];
 	int minindex = 0;
-	for(int i=0; i<10; i++)
+	for(int i=0; i<10-1; i++) //选择排序只用处理n-1趟
 	{
 		min = array[i]; //假设最小数为当前下标的数
 		minindex = i; //假设最小数下标为当前数下标
