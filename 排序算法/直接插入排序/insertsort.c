@@ -7,10 +7,10 @@ int main()
 {
 	int array[6] = {5,1,4,2,4,3};
 
-	//排序开始,从第一个数从右往左开始找右边比该数小,左边比该数大的位置
+	//排序开始
 	for(int i=1;i<6;i++)
 	{
-		int j=i;
+		int j=i-1;
 		int temp=0;
 		while(j>0)
 		{

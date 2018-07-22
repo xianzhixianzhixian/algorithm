@@ -7,11 +7,12 @@ int main()
 {
 	int array[6] = {5,1,4,2,4,3};
 
-	//排序开始,从第一个数从右往左开始找右边比该数小,左边比该数大的位置
-	for(int i=0;i<6;i++)
+	//排序开始
+	for(int i=1;i<6;i++)
 	{
 		int j=i-1;
 		int temp=array[i];
+		//i的左边是有序数组
 		while(j>=0 && temp<array[j])
 		{
 			//当temp比其左边的数的值小时,则将其左边的数依次右移
