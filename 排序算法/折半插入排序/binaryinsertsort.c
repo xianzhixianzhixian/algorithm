@@ -23,6 +23,8 @@ int main()
 			}
 			else
 			{
+				//这里包含==的情况,当被插入的数大于或等于当前index的数时那么start的index就必须向右移
+				//向右移之后若符合条件则当前的下标即为目标数插入的下标,所以最后是array[start]=dist;
 				start = middle+1;
 			}
 		}
